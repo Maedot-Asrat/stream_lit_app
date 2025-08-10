@@ -96,7 +96,7 @@ if submit:
 
         # Show uploaded image on right column
         with col2:
-            st.image(opencv_image, channels="BGR", caption="Uploaded Leaf Image", use_column_width=True)
+            st.image(opencv_image, channels="BGR", caption="Uploaded Leaf Image", use_container_width=True)
 
         # Preprocess image for model prediction
         img_resized = cv2.resize(opencv_image, (256, 256))
